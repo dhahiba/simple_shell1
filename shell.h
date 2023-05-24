@@ -30,6 +30,7 @@ typedef struct map
 } f_map;
 void execute_command(char **arguments);
 int tokenize_command(char *command, char **arguments);
+int _exite(int arg, char* argv[]);
 char *_strtok(char *ch, char *d, char **sp);
 int _atois(char *s);
 void *_rllc(void *p, unsigned int sizep, unsigned int nsize);
