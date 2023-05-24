@@ -28,6 +28,8 @@ typedef struct map
 	char *cname;
 	void (*f)(char **command);
 } f_map;
+void execute_command(char **arguments);
+int tokenize_command(char *command, char **arguments);
 char *_strtok(char *ch, char *d, char **sp);
 int _atois(char *s);
 void *_rllc(void *p, unsigned int sizep, unsigned int nsize);
